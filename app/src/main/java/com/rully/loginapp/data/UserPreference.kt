@@ -23,6 +23,12 @@ internal class UserPreference(context: Context) {
         return model
     }
 
+    fun clearUser() {
+        val editor = preferences.edit()
+        editor.clear()
+        editor.apply()
+    }
+
     companion object {
         const val PREFS_NAME = "user_pref"
         const val EMAIL = "email"
