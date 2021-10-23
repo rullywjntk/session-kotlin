@@ -1,6 +1,7 @@
 package com.rully.loginapp.data
 
 data class User(
-    val email: String? = null,
-    val password: String? =null
+    var email: String? = null,
+    var password: String? = null,
+    var isLogin: Boolean = false
 )
