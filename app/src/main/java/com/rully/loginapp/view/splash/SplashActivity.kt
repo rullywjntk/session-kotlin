@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.rully.loginapp.R
+import com.rully.loginapp.view.login.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -15,6 +16,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }, 1500)
     }
 }
