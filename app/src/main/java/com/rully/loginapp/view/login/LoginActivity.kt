@@ -24,7 +24,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         userPreference = UserPreference(this)
 
         binding.btnLogin.setOnClickListener(this)
-
     }
 
     override fun onStart() {
