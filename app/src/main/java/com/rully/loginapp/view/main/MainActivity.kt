@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         userPreference = UserPreference(this)
+
+        binding.tvEmail.text = userPreference.getUser().email
         binding.btnLogout.setOnClickListener(this)
     }
 
